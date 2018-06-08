@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>~/shxck</title>
+	<script type="text/javascript">
+		var i = 0;
+var titleText = [
+	"var", "bin", "bash", "usr", "tmp", "chmod", "ls"
+];
+
+if (document.addEventListener) {
+	document.addEventListener("DOMContentLoaded", function() {
+		loaded();
+	});
+} else if (document.attachEvent) {
+	document.attachEvent("onreadystatechange", function() {
+		loaded();
+	});
+}
+
+function loaded() {
+	setInterval(loop, 150);
+}
+
+function loop() {
+	document.getElementsByTagName("title")[0].innerHTML = titleText[i++ % titleText.length];
+}
+	</script>
+	<style type="text/css">
+	@import url('https://fonts.googleapis.com/css?family=Roboto:700|VT323');
+		body {
+			background: black;
+		}
+		h1 {
+			text-shadow: 0 0 7px #FF0000;
+			transition: letter-spacing .3s;
+            color: white;
+			position: absolute;
+			top: 42%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			font-size: 75px;
+			font-family: 'Roboto', sans-serif;
+
+		}
+		h2 {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+			color: white;
+			font-family: 'VT323', monospace;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			font-size: 25px;
+		}
+		h1:hover {
+			letter-spacing: 5px;
+		}
+        a {
+        transition: color .3s;
+        text-decoration: none;
+        color: white;
+        }
+        a:hover {
+        	color: #FF0000;
+        }
+	</style>
+</head>
+<body>
+<embed src="https://my.mixtape.moe/zkgvxc.mp3" autostart=true loop=true hidden="true" width="0" height="0">
+<h1><a href="https://matrixmobster.io">Razzor</a></h1>
+<h2>- usr/bin/bash -</h2>
+</body>
+</html>
